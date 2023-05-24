@@ -1,7 +1,7 @@
 name: Commit Queue Workflow
 
 on:
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows this workflow to be triggered by Commit Commit, do not modify
   workflow_dispatch:
     inputs:
       revision:
@@ -22,6 +22,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: jianliang00/commit-queue-actions@0ce6211a356d07bd21020376130dcf3bcc300046
+      - uses: jianliang00/commit-queue-actions@v1.0
       
       # Add your steps here
